@@ -1,0 +1,176 @@
+<!doctype html>
+<html>
+<head>
+    <title>Champions</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style5.css" />
+</head>
+<body>
+    <ul>
+        <li><a href="index.html">Registration</a></li>
+        <li><a href="definition.html">Definition</a></li>
+        <li class="dropdown">
+            <a href="examples.html" class="dropbtn">Types</a>
+            <div class="dropdown-content">
+                <a href="examples.html#boxing">Boxing</a>
+                <a href="examples.html#chess">Chess</a>
+                <a href="examples.html#basketball">Basketball</a>
+                <a href="examples.html#skating">Skating</a>
+                <a href="examples.html#gymnastics">Gymnastics</a>
+                <a href="examples.html#football">Football</a>
+                <a href="examples.html#tennis">Tennis</a>
+            </div>
+        </li>
+        <li><a href="history.html">History</a></li>
+        <li><a href="champions.html">Champions</a></li>
+    </ul>
+
+
+
+    <div class="slideshow-container">
+        <div class="mySlides1">
+            <img src="mosalah.jpg" style="width:100%; height:600px;">
+            <div class="text">Mohamed Salah Hamed Mahrous Ghaly</div>
+        </div>
+
+        <div class="mySlides1">
+            <img src="mosalah2.jpg" style="width:100%; height:600px;">
+            <div class="text">is an Egyptian professional footballer who plays as a forward for Premier League club Liverpool and captains the Egypt national team. </div>
+        </div>
+
+        <div class="mySlides1">
+            <img src="mosalah3.jpg" style="width:100%; height:600px;">
+            <div class="text">Considered one of the best players in the world, he is known for his finishing, dribbling, and speed.</div>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+    </div>
+
+    <p></p>
+    <div class="slideshow-container">
+        <div class="mySlides2">
+            <img src="mj.jpg" style="width:100%; height:600px;">
+            <div class="text">Michael Jeffrey Jordan also known by his initials MJ </div>
+        </div>
+
+        <div class="mySlides2">
+            <img src="mj2.jpg" style="width:100%; height:600px;">
+            <div class="text">He is an American businessman and former professional basketball player. </div>
+        </div>
+
+        <div class="mySlides2">
+            <img src="mj3.jpg" style="width:100%; height:600px;">
+            <div class="text">	By acclamation, Michael Jordan is the greatest basketball player of all time.</div>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+    </div>
+
+
+    <p></p>
+    <div class="slideshow-container">
+        <div class="mySlides3">
+            <img src="nd.jpg" style="width:100%; height:600px;">
+            <div class="text">Novak Djokovic is a Serbian professional tennis player. </div>
+        </div>
+
+        <div class="mySlides3">
+            <img src="nd2.jpg" style="width:100%; height:600px;">
+            <div class="text">He is currently ranked as world No. 1 by the Association of Tennis Professionals (ATP).</div>
+        </div>
+
+        <div class="mySlides3">
+            <img src="nd3.jpg" style="width:100%; height:600px;">
+            <div class="text">Djokovic has been No. 1 for a record total of 324 weeks.</div>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1, 2)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1, 2)">&#10095;</a>
+    </div>
+
+
+
+    <p></p>
+    <div class="slideshow-container">
+        <div class="mySlides4">
+            <img src="sb.jpg" style="width:100%; height:600px;">
+            <div class="text">Simone Arianne Biles is an American artistic gymnast. </div>
+        </div>
+
+        <div class="mySlides4">
+            <img src="sb2.jpg" style="width:100%; height:600px;">
+            <div class="text">With a combined total of 30 Olympic and World Championship medals.</div>
+        </div>
+
+        <div class="mySlides4">
+            <img src="sb3.jpg" style="width:100%; height:600px;">
+            <div class="text">Biles is widely considered to be one of the greatest and most dominant gymnasts of all time.</div>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1, 3)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1, 3)">&#10095;</a>
+    </div>
+
+
+
+
+    <p></p>
+    <div class="slideshow-container">
+        <div class="mySlides5">
+            <img src="moali.jpg" style="width:100%; height:600px;">
+            <div class="text">Muhammad Ali Clay was an American professional boxer, activist, entertainer, poet, and philanthropist. </div>
+        </div>
+
+        <div class="mySlides5">
+            <img src="moali2.jpg" style="width:100%; height:600px;">
+            <div class="text">Nicknamed The Greatest, he is widely regarded as one of the most significant and celebrated sporting figures of the 20th century,</div>
+        </div>
+
+        <div class="mySlides5">
+            <img src="moali3.jpg" style="width:100%; height:600px;">
+            <div class="text">Is frequently ranked as the best heavyweight boxer and greatest athlete of the century.</div>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1, 4)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1, 4)">&#10095;</a>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        var slideIndex = [1, 1, 1, 1, 1];
+        var slideId = ["mySlides1", "mySlides2", "mySlides3", "mySlides4", "mySlides5"]
+        showSlides(1, 0);
+        showSlides(1, 1);
+        showSlides(1, 2);
+        showSlides(1, 3);
+        showSlides(1, 4);
+        function plusSlides(n, no) {
+            showSlides(slideIndex[no] += n, no);
+        }
+
+        function showSlides(n, no) {
+            var i;
+            var x = document.getElementsByClassName(slideId[no]);
+            if (n > x.length) { slideIndex[no] = 1 }
+            if (n < 1) { slideIndex[no] = x.length }
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            x[slideIndex[no] - 1].style.display = "block";
+        }
+    </script>
+
+</body>
+</html>

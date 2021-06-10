@@ -1,0 +1,202 @@
+ ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgba(100,100,200,0.8);
+}
+
+li {
+    float: left;
+}
+
+    li a, .dropbtn {
+        display: inline-block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size:larger;
+    }
+
+        li a:hover, .dropdown:hover .dropbtn {
+            background-color: red;
+        }
+
+    li.dropdown {
+        display: inline-block;
+    }
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+    }
+
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+ 
+body{
+    background-image: url("different_sports.jpg");
+   background-repeat:no-repeat;
+   background-size:100% 100%;
+   background-attachment: fixed;
+}
+
+.first {
+    color: whitesmoke;
+    font-family: 'Miriam Fixed';
+    margin: 10% 15% 0% 0%;
+    font-size: 300%;
+    float: left;
+    position: fixed;
+    bottom: 55%;
+    z-index: -1;
+}
+
+.second {
+    color: gold;
+    font-family: cursive;
+    margin: 0% 10% 0% 5%;
+    font-size: 150%;
+    float: left;
+    text-indent:50px;
+   position:fixed;
+   bottom:50%;
+   z-index:-1;
+}
+
+.register {
+    float: right;
+    width: 40%;
+    height: 1000px;
+    background-color: #3933;
+    border: 2px solid #3933;
+    border-radius: 15%;
+    margin: 0% 3% 0% 75%;
+    text-align: center;
+    padding: 5% 0% 5% 0%;
+    box-sizing: border-box;
+}
+
+button[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    width: 80%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 6px;
+    margin-bottom: 16px;
+}
+
+input {
+    width: 80%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+}
+
+
+#message {
+    display: none;
+    background: #f1f1f1;
+    color: #000;
+    position: relative;
+    padding: 20px;
+    margin-top: 10px;
+}
+
+    #message p {
+        padding: 10px 35px;
+        font-size: 18px;
+    }
+
+.valid {
+    color: green;
+}
+
+    .valid:before {
+        position: relative;
+        left: -35px;
+        content: "&#10004;";
+    }
+
+
+.invalid {
+    color: red;
+}
+
+    .invalid:before {
+        position: relative;
+        left: -35px;
+        content: "&#10006;";
+    }
+
+
+    label{
+        font-size:x-large;
+    }
+
+    @media (max-width:1000px){
+        .first,.second {
+           
+            display:none;
+        }
+        .register{
+            margin:auto;
+            width:100%;
+            border-radius:unset;
+        }
+        input, button[type=submit] {
+            width: 100%;
+        }
+         li{
+            float: none;
+      
+        }
+
+        ul{
+            width: 100%;
+            
+            
+        }
+        li a,.dropbtn{
+            display:block;
+        }
+        li.dropdown {
+            display: block;
+        }
+        .dropdown-content {
+            position:relative;
+            overflow:auto;
+            height:200px;
+        }
+        .dropdown-content a{
+            text-align:center;
+        }
+
+}
+       
+
+   
